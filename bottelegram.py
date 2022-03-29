@@ -38,8 +38,10 @@ def verificar(mensagem):
 
 @bot.message_handler(func=verificar)
 def responder(mensagem):
-    bot.send_message(mensagem.chat.id, '''
-Olá, seja bem vindo ao Atendimento da RevGás!
+    print(mensagem)
+    nome_cliente = mensagem.from_user.first_name
+    bot.send_message(mensagem.chat.id, f'''
+Olá {nome_cliente}, seja bem vindo ao Atendimento da RevGás!
 Escolha uma das opções para continuar(Clique no Item):
     - /pedido (Fazer um Pedido)
     - /reclamar (Fazer Reclamação de Produtos ou atentimento)
