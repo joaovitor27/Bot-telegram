@@ -173,9 +173,9 @@ def responder(mensagem):
 Olá {nome_cliente}, seja bem vindo ao Atendimento da RevGás!
 Escolha uma das opções para continuar(Clique no Item):
     - /pedido (Fazer um Pedido)
-    - /reclamacao (Fazer Reclamação de Produtos ou atentimento)
-    - /endereco (Emdereço da Rev Gás)
-    - /redessociais (intagram, linkdin, twitter, site)
+    - /reclamacao (Fazer Reclamação de Produto ou atentimento)
+    - /endereco (Endereço da RevGás)
+    - /redessociais (Instagram, Linkedin, Twitter, Site)
 ''')
 
 bot.polling()
