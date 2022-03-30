@@ -1,4 +1,5 @@
 import telebot
+import random
 
 #chave dev CHAVE_API = "5158551785:AAFITirBNUOAA2YFQGrrnDJFk2lAPriOuUM"
 CHAVE_API = "5187133043:AAE0rYWXDGDDKdNjplGAchQ9abj7fw9GyIA"
@@ -10,7 +11,7 @@ bot = telebot.TeleBot(CHAVE_API)
 @bot.message_handler(commands=["gas5"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
@@ -29,7 +30,7 @@ def responder(mensagem):
 @bot.message_handler(commands=["gas8"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
@@ -48,7 +49,7 @@ def responder(mensagem):
 @bot.message_handler(commands=["gas13"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
@@ -67,7 +68,7 @@ def responder(mensagem):
 @bot.message_handler(commands=["gas20"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
@@ -86,7 +87,7 @@ def responder(mensagem):
 @bot.message_handler(commands=["gas45"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
@@ -105,7 +106,7 @@ def responder(mensagem):
 @bot.message_handler(commands=["gas90"])
 def responder(mensagem):
 
-    id_cliente = mensagem.from_user.id
+    id_cliente = mensagem.from_user.id + random.randint(0, 1000000)
     nome_cliente = mensagem.from_user.first_name
     is_bot = mensagem.from_user.is_bot
 
